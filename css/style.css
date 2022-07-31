@@ -17,7 +17,6 @@ body {
   align-items: center;
   background-color: #131417;
   box-shadow: 0px 4px 4px rgba(19, 20, 23, 0.4);
-  width: 100%;
 }
 
 .logo__pic {
@@ -64,35 +63,38 @@ body {
 /*Конец Стили для треугольника*/
 
 .drop__menu {
+  width: 320px;
   padding: 0;
   position: absolute;
   top: 40px;
+  left: -10px;
   background-color: #252830;
   border-radius: 0px 0px 8px 8px;
 }
 
 .sub__item {
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #FAFAFA;
   text-decoration: none;
-  padding-left: 18px;
+  padding: 0 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sub__list {
   display: flex;
-  list-style: none;
-  min-width: 300px;
   height: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   align-items: center;
   position: relative;
-  
 }
 
 .sub__list:last-child{
-  border: none;
+  border-radius: 0 0 8px 8px;
 }
 
 .sub__list:hover {
@@ -100,11 +102,17 @@ body {
 }
 
 .sub__sub--menu{
-  padding: 0;
+  min-width: 179px;
+  padding: 0; 
   position: absolute;
   top: -41px;
-  left: 320px;
+  left: 100%;
   background-color: #252830;
+  margin-left: 22px;
+  border-radius: 8px;
+}
+
+.sub__sub--menu .sub__list{
   border-radius: 8px;
 }
 
@@ -131,16 +139,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.main__pic {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-
-
-
 
 @media (max-width: 1023px){
   .menu__item:hover {
