@@ -1,0 +1,152 @@
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.header {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #131417;
+  box-shadow: 0px 4px 4px rgba(19, 20, 23, 0.4);
+  width: 100%;
+}
+
+.logo__pic {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.basic__menu {
+  display: flex;
+}
+
+.basic__list {
+  list-style: none;
+  margin-left: 40px;
+  position: relative;
+}
+
+.menu__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FAFAFA;
+  text-decoration: none;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+.menu__item:hover {
+  color: #EB5757;
+}
+
+/* Начало Стили для треугольника*/
+
+.sub__menu--tr {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #F2994A;
+  position: absolute;
+}
+
+/*Конец Стили для треугольника*/
+
+.drop__menu {
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  background-color: #252830;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.sub__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FAFAFA;
+  text-decoration: none;
+  padding-left: 18px;
+}
+
+.sub__list {
+  display: flex;
+  list-style: none;
+  min-width: 300px;
+  height: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  position: relative;
+  
+}
+
+.sub__list:last-child{
+  border: none;
+}
+
+.sub__list:hover {
+  background-color: #131417;
+}
+
+.sub__sub--menu{
+  padding: 0;
+  position: absolute;
+  top: -41px;
+  left: 320px;
+  background-color: #252830;
+  border-radius: 8px;
+}
+
+.phone {
+  display: flex;
+}
+
+.phone__pic {
+  color: #5BC12C;
+}
+
+.telephone {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  white-space: nowrap
+}
+
+.main {
+  min-height: 100vh;
+  background-image: url(../img/alpaca.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__pic {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+
+
+
+@media (max-width: 1023px){
+  .menu__item:hover {
+    color: #FFFFFF;
+  }
+  .sub__list:hover {
+    background-color: #252830;
+  }
+}
