@@ -49,27 +49,48 @@ body {
   color: #EB5757;
 }
 
+
+.sub__menu{
+  display: flex;
+  align-items: center;
+}
+
 /* Начало Стили для треугольника*/
 
 .sub__menu--tr {
+  cursor: pointer;
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 8px solid #F2994A;
-  position: absolute;
+  border-top: 8px solid #F2994A;
 }
 
 /*Конец Стили для треугольника*/
+
+.drop__menu--tr{
+  position: relative;
+}
 
 .drop__menu {
   width: 320px;
   padding: 0;
   position: absolute;
-  top: 40px;
+  top: 16px;
   left: -10px;
   background-color: #252830;
   border-radius: 0px 0px 8px 8px;
+}
+
+.menu-tr{
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid #252830;
+  position: absolute;
+  top: 2px;
+  left: 47px;
 }
 
 .sub__item {
@@ -114,6 +135,25 @@ body {
 
 .sub__sub--menu .sub__list{
   border-radius: 8px;
+}
+
+.sub__sub--menu .sub__list:first-child{
+  border-radius: 8px 8px 0 0;
+}
+
+.sub__sub--tr{
+  position: relative;
+}
+
+.menu__tr{
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-right: 14px solid #252830;
+  border-bottom: 14px solid transparent;
+  position: absolute;
+  left: -14px;
+  bottom: 8px;
 }
 
 .phone {
