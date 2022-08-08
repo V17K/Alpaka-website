@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Сайт альпака</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт альпака</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
         <div class="container">
-            <div class="header">
-                <div class="header__logo">
-                    <img src="img/logo.png" alt="Логотип" class="header__pic">
-                </div>
-                <div
-                    class="header__menu">
+            <div class="header__container">
+                <a href="#" class="logo header__logo">
+                    <img src="img/logo.svg" alt="Логотип" class="logo__pic" width="46" height="46">
+                </a>
+                <nav class="nav">
                     <!--Основное меню-->
-                    <ul class="basic__menu">
-                        <li class="basic__list">
-                            <a href="#" class="menu__item">Главная</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Главная</a>
                         </li>
-                        <div class="sub__menu">
-                            <li class="basic__list">
-                                <a href="#" class="menu__item">Основное меню</a>
-                                <div class="drop__menu--tr">
-                                    <ul
-                                        class="drop__menu">
-                                        <!--Первый уровень меню-->
-                                        <li class="sub__list">
-                                            <a href="#" class="sub__item">Заказать вёрстку</a>
-                                        </li>
-                                        <li class="sub__list">
-                                            <a href="#" class="sub__item">Отправить макет на проверку</a>
-                                        </li>
-                                        <li class="sub__list">
-                                            <a href="#" class="sub__item">Хочу работать у Вас</a>
-                                        </li>
-                                        <li class="sub__list">
-                                            <a href="#" class="sub__item">Есть предложение по работе с клиентами</a>
-                                            <ul class="sub__sub--menu">
-                                                <div class="sub__sub--tr">
-                                                    <li class="sub__list">
-                                                        <a href="#" class="sub__item">У меня есть оффер</a>
-                                                    </li>
-                                                    <li class="sub__list">
-                                                        <a href="#" class="sub__item">Сделать партнером</a>
-                                                    </li>
-                                                    <div class="menu__tr">
-    
-                                                    </div>    
-                                                </div>
-                                                
+                        <li class="nav__item nav__item--drop ">
+                            <a href="#" class="nav__link">Основное меню</a>
+                            <div class="nav__inner-wrap nav__inner-wrap--1">
+                                <ul class="nav__inner-list">
+                                    <li class="nav__inner-item">
+                                        <a href="#" class="nav__inner-link">Заказать верстку</a>
+                                    </li>
+                                    <li class="nav__inner-item">
+                                        <a href="#" class="nav__inner-link">Отправить макет на проверку</a>
+                                    </li>
+                                    <li class="nav__inner-item">
+                                        <a href="#" class="nav__inner-link">Хочу у Вас работать</a>
+                                    </li>
+                                    <li class="nav__inner-item nav__inner-item--drop">
+                                        <a href="#" class="nav__inner-link">Есть предложение по работе с клиентами
+                                            клиентами Есть предложение по работе с клиентами клиентами</a>
+                                        <div class="nav__inner-wrap nav__inner-wrap--2">
+                                            <ul class="nav__inner-list">
+                                                <li class="nav__inner-item">
+                                                    <a href="#" class="nav__inner-link">У меня есть оффер</a>
+                                                </li>
+                                                <li class="nav__inner-item">
+                                                    <a href="#" class="nav__inner-link">Сделать парнёром</a>
+                                                </li>
                                             </ul>
-                                        </li>
-                                    </ul>
-                                    <div class="menu-tr"></div>
-                                </div>
-                            </li>
-                        </div>
-                        <li class="basic__list">
-                            <a href="#" class="menu__item">Наши сервисы</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="basic__list">
-                            <a href="#" class="menu__item">Контакты</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Наши сервисы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
                         </li>
                     </ul>
-                </div>
-                <div class="header__phone">
-                    <div class="phone">
-                        <a href="#" class="phone__pic">
-                            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.821 16.43 14.94C17.55 15.311 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.391 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                        <div class="telephone">
-                            +1 (321) 222 - 33 -33
-                        </div>
-                    </div>
-                </div>
+                </nav>
+                <a href="tel:+13212223333" class="header__phone">
+                    <img src="img/phone.svg" alt="" class="header__phone-icon">
+                    +1 (321) 222 - 33 -33
+                </a>
             </div>
-            <div class="main"></div>
         </div>
-    </body>
+    </header>
+    <div class="main">
+        <div class="overlay"></div>
+    </div>
+    
+</body>
+
 </html>
